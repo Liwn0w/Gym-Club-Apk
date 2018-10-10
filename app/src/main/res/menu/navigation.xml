@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_fit"
+        android:title="Fit"
+        android:icon="@drawable/fit"
+        />
+
+    <item
+        android:id="@+id/navigation_find"
+        android:title="Find"
+        android:icon="@drawable/search"/>
+
+    <item
+        android:id="@+id/navigation_news"
+        android:title="News"
+        android:icon="@drawable/news"/>
+
+    <item
+        android:id="@+id/navigation_profile"
+        android:title="Me"
+        android:icon="@drawable/me"/>
+    />
+
+</menu>
