@@ -17,7 +17,7 @@ public class find extends AppCompatActivity {
 
     RecyclerView recyclerView;
     Vector<YouTubeVideos> youTubeVideos = new Vector<>();
-    Button trainer, gyms;
+    Button trainer;
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -48,7 +48,6 @@ public class find extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_find);
         trainer = findViewById(R.id.trainers);
-        gyms = findViewById(R.id.gyms);
 
         trainer.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -57,12 +56,6 @@ public class find extends AppCompatActivity {
             }
         });
 
-        gyms.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(find.this, MapsActivity.class));
-            }
-        });
         recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
