@@ -1,1 +1,1 @@
-include ':appv1', ':appv3', ':appv2'
+include ':appv1', ':appv3', ':appv2', ':appv4'
