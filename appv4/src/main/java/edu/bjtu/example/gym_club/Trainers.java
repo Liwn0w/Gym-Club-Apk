@@ -14,6 +14,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Trainers extends AppCompatActivity {
 
         private Button call, sms, email;
@@ -50,6 +53,8 @@ public class Trainers extends AppCompatActivity {
             tlfno = (TextView) findViewById(R.id.tlf);
             emailaddress = (TextView) findViewById(R.id.emailaddress);
 
+            getInfo();
+
             call.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -59,6 +64,28 @@ public class Trainers extends AppCompatActivity {
                 }
             });
 
+        }
+
+        private void getInfo(){
+            List<trainersLocalItem> data = new ArrayList<>();
+
+            ContentProvider contentProvider = new ContentProvider(this.getApplicationContext());
+
+            if((data = contentProvider.getInfo("trainerInfo"))!=null && !data.isEmpty()){
+                tlfno.setText(data.get(0).getTel());
+                emailaddress.setText(data.get(0).getEmail());
+            }else {
+                setInfo();
+            }
+        }
+
+        private void setInfo(){
+            List<trainersLocalItem> trainersLocalItems = new ArrayList<>();
+            trainersLocalItems.add(new trainersLocalItem(12,"12345678910","aa@qq.com"));
+
+            ContentProvider contentProvider = new ContentProvider(this.getApplicationContext());
+
+            contentProvider.setInfo("trainerInfo",trainersLocalItems);
         }
     }
 
