@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/newsbackground"
+    tools:context="edu.bjtu.example.gym_club.news">
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#b5edeae7"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/navigation" />
+
+    <TextView
+        android:id="@+id/newslabel"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="23dp"
+        android:background="#baffffff"
+        android:fontFamily="serif-monospace"
+        android:text="NEWS"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="NEWS" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="292dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newslabel" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:background="@drawable/newsbackground"
+            >
+
+            <ImageView
+                android:id="@+id/newsimage1"
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:scaleType="centerCrop"
+                android:background="@drawable/baseball"
+                />
+
+            <TextView
+                android:id="@+id/news1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5dp"
+                android:text="Photo Title"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#333333" />
+
+            <ImageView
+                android:id="@+id/newsimage2"
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:scaleType="centerCrop"
+                android:background="@drawable/stepdance"/>
+
+            <TextView
+                android:id="@+id/news2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5dp"
+                android:text="Photo Title"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#333333" />
+
+            <ImageView
+                android:id="@+id/newsimage3"
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:scaleType="centerCrop"
+                android:background="@drawable/basketball"/>
+
+            <TextView
+                android:id="@+id/news3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5dp"
+                android:text="Photo Title"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#333333" />
+
+            <ImageView
+                android:id="@+id/newsimage4"
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:scaleType="centerCrop"
+                android:background="@drawable/yoga"/>
+
+            <TextView
+                android:id="@+id/news4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5dp"
+                android:text="Photo Title"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#333333" />
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>
