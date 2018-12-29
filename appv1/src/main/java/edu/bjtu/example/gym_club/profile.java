@@ -39,12 +39,12 @@ public class profile extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
 
-        Button schedulebtn = (Button) findViewById(R.id.myschedule);
+        Button settingsbtn = (Button) findViewById(R.id.mysettings);
 
-        schedulebtn.setOnClickListener(new View.OnClickListener() {
+        settingsbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(profile.this, schedule.class));
+                startActivity(new Intent(profile.this, settings_page.class));
             }
         });
 

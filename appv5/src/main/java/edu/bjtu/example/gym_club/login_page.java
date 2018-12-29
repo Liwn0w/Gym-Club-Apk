@@ -54,6 +54,7 @@ public class login_page extends AppCompatActivity implements View.OnClickListene
             @Override
             public void onSuccess(LoginResult loginResult) {
                 Toast.makeText(login_page.this, "Successful facebook login", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(login_page.this, profile.class));
             }
 
             @Override
