@@ -40,6 +40,8 @@
         <activity android:name=".schedule" />
         <activity android:name=".diary" />
         <activity android:name=".Trainers" />
+        <activity android:name=".settings_page"></activity>
+
         <meta-data android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/facebook_app_id"/>
 

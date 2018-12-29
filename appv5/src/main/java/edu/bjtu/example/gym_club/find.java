@@ -27,6 +27,7 @@ public class find extends AppCompatActivity {
             switch (item.getItemId()) {
                 case R.id.navigation_fit:
                     startActivity(new Intent(find.this, schedule.class));
+                    return true;
                 case R.id.navigation_find:
                     startActivity(new Intent(find.this, find.class));
                     return true;
@@ -61,6 +62,10 @@ public class find extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         //youtubevideos
+
+        youTubeVideos.add(new YouTubeVideos("<iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/v7AYKMP6rOE\" frameborder=\"0\" allowfullscreen></iframe>"));
+
+        youTubeVideos.add(new YouTubeVideos("<iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/v7AYKMP6rOE\" frameborder=\"0\" allowfullscreen></iframe>"));
 
         youTubeVideos.add(new YouTubeVideos("<iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/v7AYKMP6rOE\" frameborder=\"0\" allowfullscreen></iframe>"));
 

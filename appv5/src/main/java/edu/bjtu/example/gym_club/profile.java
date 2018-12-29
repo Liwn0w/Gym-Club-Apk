@@ -22,6 +22,7 @@ public class profile extends AppCompatActivity {
             switch (item.getItemId()) {
                 case R.id.navigation_fit:
                     startActivity(new Intent(profile.this, schedule.class));
+                    return true;
                 case R.id.navigation_find:
                     startActivity(new Intent(profile.this, find.class));
                     return true;
@@ -45,12 +46,12 @@ public class profile extends AppCompatActivity {
         TextView username = (TextView) findViewById(R.id.profilepage_name);
         username.setText(user.getUsername());
 
-        Button schedulebtn = (Button) findViewById(R.id.myschedule);
+        Button settingsbtn = (Button) findViewById(R.id.mysettings);
 
-        schedulebtn.setOnClickListener(new View.OnClickListener() {
+        settingsbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(profile.this, schedule.class));
+                startActivity(new Intent(profile.this, settings_page.class));
             }
         });
 

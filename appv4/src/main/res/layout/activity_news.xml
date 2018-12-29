@@ -50,7 +50,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:padding="8dp"
-            android:background="@drawable/newsbackground"
+
             >
 
             <ImageView
@@ -76,7 +76,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="80dp"
                 android:scaleType="centerCrop"
-                android:background="@drawable/stepdance"/>
+                android:background="@drawable/stepdancing"/>
 
             <TextView
                 android:id="@+id/news2"
@@ -93,7 +93,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="80dp"
                 android:scaleType="centerCrop"
-                android:background="@drawable/basketball"/>
+                android:background="@drawable/basketball1"/>
 
             <TextView
                 android:id="@+id/news3"
@@ -110,7 +110,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="80dp"
                 android:scaleType="centerCrop"
-                android:background="@drawable/yoga"/>
+                android:background="@drawable/yogateacher"/>
 
             <TextView
                 android:id="@+id/news4"
