@@ -26,6 +26,7 @@ public class Trainers extends AppCompatActivity {
                 switch (item.getItemId()) {
                     case R.id.navigation_fit:
                         startActivity(new Intent(Trainers.this, schedule.class));
+                        return true;
                     case R.id.navigation_find:
                         startActivity(new Intent(Trainers.this, find.class));
                         return true;
@@ -45,10 +46,7 @@ public class Trainers extends AppCompatActivity {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_trainers);
             call = (Button) findViewById(R.id.callaction);
-            sms = (Button) findViewById(R.id.smsaction);
-            email = (Button) findViewById(R.id.emailaction);
             tlfno = (TextView) findViewById(R.id.tlf);
-            emailaddress = (TextView) findViewById(R.id.emailaddress);
 
             call.setOnClickListener(new View.OnClickListener() {
                 @Override

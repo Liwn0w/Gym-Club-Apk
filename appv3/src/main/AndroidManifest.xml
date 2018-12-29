@@ -40,6 +40,7 @@
         <activity android:name=".schedule" />
         <activity android:name=".diary" />
         <activity android:name=".Trainers" />
+        <activity android:name=".settings_page"></activity>
 
     </application>
 

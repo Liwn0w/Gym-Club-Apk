@@ -37,13 +37,9 @@
                 android:id="@+id/tlf"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="+34666777888" />
+                android:text="+34666777888"
+                android:background="@color/colorButtonMTP"/>
 
-            <TextView
-                android:id="@+id/emailaddress"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Email: 000@itu.dk" />
         </LinearLayout>
 
         <LinearLayout
@@ -58,17 +54,6 @@
                 android:layout_height="wrap_content"
                 android:text="Call" />
 
-            <Button
-                android:id="@+id/smsaction"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="SMS" />
-
-            <Button
-                android:id="@+id/emailaction"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Email" />
         </LinearLayout>
 
     </LinearLayout>
