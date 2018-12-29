@@ -1,5 +1,4 @@
 # Gym-Club-Apk
 
-Three assignment are up as v1, v2, v3.
-In version 3, I took the maps function away, because I can't share my api key on github
-
+Five assignments are up as v1, v2, v3, v4 and v5.
+Please se the reports in the report folder for the running results.
