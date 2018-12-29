@@ -50,7 +50,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:padding="8dp"
-            android:background="@drawable/newsbackground"
+
             >
 
             <ImageView
@@ -58,6 +58,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="80dp"
                 android:scaleType="centerCrop"
+                android:background="@drawable/baseball"
                 />
 
             <TextView
@@ -74,7 +75,8 @@
                 android:id="@+id/newsimage2"
                 android:layout_width="fill_parent"
                 android:layout_height="80dp"
-                android:scaleType="centerCrop" />
+                android:scaleType="centerCrop"
+                android:background="@drawable/stepdancing"/>
 
             <TextView
                 android:id="@+id/news2"
@@ -90,10 +92,28 @@
                 android:id="@+id/newsimage3"
                 android:layout_width="fill_parent"
                 android:layout_height="80dp"
-                android:scaleType="centerCrop" />
+                android:scaleType="centerCrop"
+                android:background="@drawable/basketball"/>
 
             <TextView
                 android:id="@+id/news3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5dp"
+                android:text="Photo Title"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#333333" />
+
+            <ImageView
+                android:id="@+id/newsimage4"
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:scaleType="centerCrop"
+                android:background="@drawable/yogateacher"/>
+
+            <TextView
+                android:id="@+id/news4"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"

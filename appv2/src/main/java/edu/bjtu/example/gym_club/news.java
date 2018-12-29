@@ -41,7 +41,7 @@ import cn.volley.toolbox.ImageLoader;
 public class news extends AppCompatActivity {
 
     CardView c;
-    TextView n1,n2,n3;
+    TextView n1,n2,n3,n4;
     ImageView i1,i2,i3;
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
@@ -73,8 +73,6 @@ public class news extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_news);
 
-
-
         c = (CardView) findViewById(R.id.cardView);
         n1 = findViewById(R.id.news1);
         i1 = findViewById(R.id.newsimage1);
@@ -82,6 +80,7 @@ public class news extends AppCompatActivity {
         i2 = findViewById(R.id.newsimage2);
         n3 = findViewById(R.id.news3);
         i3 = findViewById(R.id.newsimage3);
+        n4 = findViewById(R.id.news4);
 
 
         BmobQuery<NewsItem> query = new BmobQuery<>();
@@ -89,10 +88,51 @@ public class news extends AppCompatActivity {
             @Override
             public void done(NewsItem newsItem, BmobException e) {
                 if(e==null) {
-                    i1.setImageBitmap(getBitmapFromURL(newsItem.getIconUrl()));
+                    n1.setText(newsItem.getContent());
+                } else {
+                    e.printStackTrace();
                 }
             }
         });
+
+        BmobQuery<NewsItem> query2 = new BmobQuery<>();
+        query2.getObject("b3a2171d32", new QueryListener<NewsItem>() {
+            @Override
+            public void done(NewsItem newsItem, BmobException e) {
+                if(e==null) {
+                    n2.setText(newsItem.getContent());
+                } else {
+                    e.printStackTrace();
+                }
+            }
+        });
+
+        BmobQuery<NewsItem> query3 = new BmobQuery<>();
+        query3.getObject("8b8fc93816", new QueryListener<NewsItem>() {
+            @Override
+            public void done(NewsItem newsItem, BmobException e) {
+                if(e==null) {
+                    n3.setText(newsItem.getContent());
+                } else {
+                    e.printStackTrace();
+                }
+            }
+        });
+
+        BmobQuery<NewsItem> query4 = new BmobQuery<>();
+        query4.getObject("410eab78d7", new QueryListener<NewsItem>() {
+            @Override
+            public void done(NewsItem newsItem, BmobException e) {
+                if(e==null) {
+                    n4.setText(newsItem.getContent());
+                } else {
+                    e.printStackTrace();
+                }
+            }
+        });
+
+
+
 
         //Add some news first
         /*
