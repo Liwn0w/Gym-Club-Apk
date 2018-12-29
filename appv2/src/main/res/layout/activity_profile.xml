@@ -21,12 +21,12 @@
         app:menu="@menu/navigation" />
 
     <Button
-        android:id="@+id/myschedule"
+        android:id="@+id/mydiary"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:background="@drawable/my_button_bg"
-        android:text="MY SCHEDULE"
-        app:layout_constraintBottom_toTopOf="@+id/mydiary"
+        android:text="MY DIARY"
+        app:layout_constraintBottom_toTopOf="@+id/mysettings"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,17 +35,17 @@
 
 
     <Button
-        android:id="@+id/mydiary"
+        android:id="@+id/mysettings"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:background="@drawable/my_button_bg"
-        android:text="MY DIARY"
+        android:text="MY SETTINGS"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/settings"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/myschedule"
+        app:layout_constraintTop_toBottomOf="@+id/mydiary"
         app:layout_constraintVertical_bias="10.0" />
 
     <Button
@@ -58,7 +58,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mydiary"
+        app:layout_constraintTop_toBottomOf="@+id/mysettings"
         app:layout_constraintVertical_bias="10.0" />
 
     <ImageButton

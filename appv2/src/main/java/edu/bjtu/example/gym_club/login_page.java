@@ -51,7 +51,7 @@ public class login_page extends AppCompatActivity implements View.OnClickListene
             public void done(BmobUser objectId, BmobException e) {
                 if(e==null) {
                     Toast.makeText(login_page.this, "Succeeded to login", Toast.LENGTH_SHORT).show();
-                    startActivity(new Intent(login_page.this, profile.class));
+                    startActivity(new Intent(login_page.this, schedule.class));
                 } else {
                     Toast.makeText(login_page.this, "Password or Username is wrong", Toast.LENGTH_SHORT).show();
                 }

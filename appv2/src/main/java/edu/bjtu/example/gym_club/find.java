@@ -17,6 +17,7 @@ public class find extends AppCompatActivity {
             switch (item.getItemId()) {
                 case R.id.navigation_fit:
                     startActivity(new Intent(find.this, schedule.class));
+                    return true;
                 case R.id.navigation_find:
                     startActivity(new Intent(find.this, find.class));
                     return true;
@@ -36,7 +37,6 @@ public class find extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_find);
-
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
     }

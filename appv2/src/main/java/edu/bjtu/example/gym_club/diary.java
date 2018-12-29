@@ -17,6 +17,7 @@ public class diary extends AppCompatActivity {
             switch (item.getItemId()) {
                 case R.id.navigation_fit:
                     startActivity(new Intent(diary.this, schedule.class));
+                    return true;
                 case R.id.navigation_find:
                     startActivity(new Intent(diary.this, find.class));
                     return true;

@@ -16,6 +16,7 @@ public class news extends AppCompatActivity {
             switch (item.getItemId()) {
                 case R.id.navigation_fit:
                     startActivity(new Intent(news.this, schedule.class));
+                    return true;
                 case R.id.navigation_find:
                     startActivity(new Intent(news.this, find.class));
                     return true;

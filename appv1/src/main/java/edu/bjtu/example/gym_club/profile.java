@@ -20,6 +20,7 @@ public class profile extends AppCompatActivity {
             switch (item.getItemId()) {
                 case R.id.navigation_fit:
                     startActivity(new Intent(profile.this, schedule.class));
+                    return true;
                 case R.id.navigation_find:
                     startActivity(new Intent(profile.this, find.class));
                     return true;

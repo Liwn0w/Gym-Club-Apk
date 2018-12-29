@@ -63,7 +63,7 @@ public class sign_page extends AppCompatActivity implements View.OnClickListener
             public void done(BmobUser objectId, BmobException e) {
                 if(e==null) {
                     Toast.makeText(sign_page.this, "Succeeded to Sign Up", Toast.LENGTH_SHORT).show();
-                    startActivity(new Intent(sign_page.this, profile.class));
+                    startActivity(new Intent(sign_page.this, schedule.class));
                 } else {
                     Toast.makeText(sign_page.this, "Failed to Sign Up", Toast.LENGTH_SHORT).show();
                 }

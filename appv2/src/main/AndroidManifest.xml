@@ -34,6 +34,7 @@
         <activity android:name=".news"> </activity>
         <activity android:name=".schedule"> </activity>
         <activity android:name=".diary"> </activity>
+        <activity android:name=".settings_page"></activity>
 
     </application>
 
